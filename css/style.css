@@ -1,0 +1,15 @@
+body {
+  background-color: #001632;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.titolo {
+  font-size: 74px;
+}
+
+.mytodo {
+  border: 1px solid white;
+  border-radius: 5px;
+  max-width: 40%;
+}
