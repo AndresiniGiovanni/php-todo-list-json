@@ -21,15 +21,16 @@
     <h1 class="titolo text-center text-white mt-5">Todo List</h1>
 
     <div class="container mytodo mt-5 text-white">
-      <ul class="mt-2 d-flex align-items-center flex-column">
-        <li v-for='(data) in mydata'>{{data.text}}</li>
+      <ul id="todo-list" class="mt-2 d-flex align-items-center flex-column">
+        <li v-for='(data, index) in mydata'>{{data.text}}</li>
       </ul>
     </div>
     <div class="d-flex justify-content-center mt-3">
-      <form method="post" action="./server.php">
-        <input class="rounded-2" type="text" name="message" id="inserisci" placeholder="    Inserisci un elemento" />
-      </form>
-      <button class="ms-3 btn btn-danger" @click="getData()">Inserisci</button>
+
+      <input v-model="newTodoText" class="rounded-2" type="text" name="newTodoText" id="inserisci"
+        placeholder="    Inserisci un elemento" />
+      <button @click='addTodo()' class="ms-3 btn btn-danger">Inserisci</button>
+
     </div>
   </div>
   <script src="./js/script.js"></script>
