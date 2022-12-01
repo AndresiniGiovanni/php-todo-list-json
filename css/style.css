@@ -13,8 +13,3 @@ body {
   border-radius: 5px;
   max-width: 40%;
 }
-
-.todo,
-.done {
-  color: black;
-}
